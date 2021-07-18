@@ -1,0 +1,211 @@
+/* Palette */
+
+/* Main text #212121 */
+
+/* Alternate text #000000 */
+
+/* Accent #2196F3 */
+
+/* Accent alternate #188CE8 */
+
+/* Communication text #757575 */
+
+/* Communication text alternate #FFFFFF 60% */
+
+/* Background darken #2F303A */
+
+/* Background lighten #F5F4FA */
+
+/* Element white #FFFFFF */
+
+/* Header line #ECECEC */
+
+/* Portfolio container background #EEEEEE */
+:root {
+  --main-text-color: #212121;
+  --alternate-text-color: #000000;
+  --accent-color: #2196f3;
+  --accent-alternate-color: #188ce8;
+  --communication-text-color: #757575;
+  --communication-text-alternate: #ffffff96;
+  --background-darken-color: #2f303a;
+  --background-lighten-color: #f5f4fa;
+  --element-white-color: #ffffff;
+  --header-line-color: #ececec;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--element-white-color);
+}
+.list {
+  list-style: none;
+}
+/* Header */
+.logo {
+  font-family: 'Raleway' sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.header-logo {
+  color: var(--alternate-text-color);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+:focus {
+  background-color: var(--element-white-color);
+  color: var(--accent-color);
+}
+.nav-link:active {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-alternate-color);
+}
+.header-contact {
+  color: var(--communication-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contact:hover,
+:focus {
+  color: var(--accent-color);
+}
+/* Main */
+.hidden-title {
+  display: none;
+}
+.hero-section {
+  background-color: var(--background-darken-color);
+  text-align: center;
+}
+.hero-title {
+  color: var(--element-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.primary-btn {
+  background-color: var(--accent-color);
+  color: var(--element-white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-width: 0px;
+  cursor: pointer;
+}
+.primary-btn:hover,
+:focus {
+  color: var(--element-white-color);
+  background-color: var(--accent-alternate-color);
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-description {
+  color: var(--communication-text-color);
+  line-height: 1.71;
+}
+.section-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-bg-color {
+  background-color: var(--background-lighten-color);
+}
+.card-bg-color {
+  color: var(--element-white-color);
+}
+.staff-name {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.staff-profession {
+  color: var(--communication-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* Portfolio */
+.filter-btn {
+  background-color: var(--background-lighten-color);
+  color: var(--main-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-btn:hover,
+:focus {
+  background-color: var(--accent-color);
+  color: var(--element-white-color);
+}
+.card-link {
+  text-decoration: none;
+}
+.card-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-filter {
+  color: var(--communication-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+/* Footer */
+.footer-bg {
+  background-color: var(--background-darken-color);
+}
+.location {
+  font-style: normal;
+  color: var(--element-white-color);
+  line-height: 1.71;
+}
+.footer-contact {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--communication-text-alternate);
+  line-height: 1.71;
+}
+.footer-contact:hover,
+:focus {
+  color: var(--element-white-color);
+}
+.footer-logo {
+  color: var(--element-white-color);
+}
+.footer-logo:active {
+  color: var(--alternate-text-color);
+}
