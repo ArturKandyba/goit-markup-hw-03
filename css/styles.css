@@ -45,7 +45,7 @@ body {
 }
 /* Header */
 .logo {
-  font-family: 'Raleway' sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
@@ -53,6 +53,9 @@ body {
 }
 .header-logo {
   color: var(--alternate-text-color);
+}
+.header-section {
+  border-bottom: 1px solid var(--header-line-color);
 }
 .nav-link {
   text-decoration: none;
@@ -70,7 +73,7 @@ body {
   color: var(--accent-color);
 }
 .current {
-  color: var(--accent-alternate-color);
+  color: var(--accent-color);
 }
 .header-contact {
   color: var(--communication-text-color);
@@ -134,10 +137,10 @@ body {
   line-height: 1.17;
   text-align: center;
 }
-.team-bg-color {
+.team-content {
   background-color: var(--background-lighten-color);
 }
-.card-bg-color {
+.card-content {
   color: var(--element-white-color);
 }
 .staff-name {
@@ -185,7 +188,7 @@ body {
   line-height: 1.87;
 }
 /* Footer */
-.footer-bg {
+.footer-section {
   background-color: var(--background-darken-color);
 }
 .location {
