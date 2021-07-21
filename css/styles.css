@@ -1,12 +1,12 @@
 /* Palette */
 
-/* Main text #212121 */
+/* Main text color #212121 */
 
-/* Alternate text #000000 */
+/* Alternate text color #000000 */
 
-/* Accent #2196F3 */
+/* Accent color #2196F3 */
 
-/* Accent alternate #188CE8 */
+/* Accent alternate color #188CE8 */
 
 /* Communication text #757575 */
 
@@ -16,11 +16,12 @@
 
 /* Background lighten #F5F4FA */
 
-/* Element white #FFFFFF */
+/* Element white color #FFFFFF */
 
 /* Header line #ECECEC */
 
-/* Portfolio container background #EEEEEE */
+/* Portfolio container border #EEEEEE */
+
 :root {
   --main-text-color: #212121;
   --alternate-text-color: #000000;
@@ -40,14 +41,27 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--element-white-color);
 }
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 /* Header */
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.2;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -87,25 +101,41 @@ body {
   color: var(--accent-color);
 }
 /* Main */
+
 .hidden-title {
   display: none;
 }
 .hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 90px;
+
   background-color: var(--background-darken-color);
   text-align: center;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   color: var(--element-white-color);
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .primary-btn {
-  background-color: var(--accent-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   color: var(--element-white-color);
+  background-color: var(--accent-color);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -157,6 +187,9 @@ body {
   text-align: center;
 }
 /* Portfolio */
+
+.filter-btn-list {
+}
 .filter-btn {
   background-color: var(--background-lighten-color);
   color: var(--main-text-color);
@@ -188,6 +221,7 @@ body {
   line-height: 1.87;
 }
 /* Footer */
+
 .footer-section {
   background-color: var(--background-darken-color);
 }

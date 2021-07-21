@@ -21,28 +21,30 @@
     <!-- Header -->
     <header class="header-section">
       <!-- Navigation -->
-      <nav>
-        <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
-        <ul class="list">
-          <li><a href="./index.html" class="nav-link">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-          <li><a href="Контакты" class="nav-link">Контакты</a></li>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
+          <ul class="nav-list list">
+            <li><a href="./index.html" class="nav-link">Студия</a></li>
+            <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+            <li><a href="Контакты" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <ul class="contacts-list list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <!-- Contacts -->
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- Main section -->
     <main>
-      <section class="portfolio">
+      <section class="portfolio container">
         <h1 class="hidden-title">Портфолио</h1>
         <!-- Buttons -->
-        <ul class="list">
+        <ul class="filter-btn-list list">
           <li><button type="button" class="filter-btn">Все</button></li>
           <li><button type="button" class="filter-btn">Веб-сайты</button></li>
           <li><button type="button" class="filter-btn">Приложения</button></li>
@@ -144,18 +146,20 @@
     </main>
     <!-- Footer -->
     <footer class="footer-section">
-      <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
-      <!-- Address information -->
-      <address>
-        <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-        <!-- Contacts information -->
-        <ul class="list">
-          <li>
-            <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
-          </li>
-          <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
+        <!-- Address information -->
+        <address>
+          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+          <!-- Contacts information -->
+          <ul class="list">
+            <li>
+              <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
+            </li>
+            <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
