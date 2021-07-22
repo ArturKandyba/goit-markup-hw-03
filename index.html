@@ -24,7 +24,7 @@
       <div class="container">
         <nav>
           <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
-          <ul class="nav-list list">
+          <ul class="link-list list">
             <li><a href="./index.html" class="nav-link current">Студия</a></li>
             <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
             <li><a href="Контакты" class="nav-link">Контакты</a></li>
@@ -81,47 +81,59 @@
       <!-- Our capabilities -->
       <section class="capabilities container">
         <h2 class="section-headline">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li><img src="./images/img1.jpg" alt="layout" width="370" height="294" /></li>
-          <li><img src="./images/img2.jpg" alt="mobile software" width="370" height="294" /></li>
-          <li><img src="./images/img3.jpg" alt="design" width="370" height="294" /></li>
+        <ul class="capabilities-list list">
+          <li><img src="./images/img1.jpg" alt="layout" width="370" /></li>
+          <li><img src="./images/img2.jpg" alt="mobile software" width="370" /></li>
+          <li><img src="./images/img3.jpg" alt="design" width="370" /></li>
         </ul>
       </section>
       <!-- Our team -->
-      <section class="team-content container">
-        <h2 class="section-headline">Наша команда</h2>
-        <ul class="list">
-          <li class="card-content">
-            <img
-              src="./images/igor-demyanenko.jpg"
-              alt="igor-demyanenko"
-              width="270"
-              height="260"
-            />
-            <h3 class="staff-name">Игорь Демьяненко</h3>
-            <p class="staff-profession">Product Designer</p>
-          </li>
-          <li class="card-content">
-            <img src="./images/olga-repina.jpg" alt="olga-repina" width="270" height="260" />
-            <h3 class="staff-name">Ольга Репина</h3>
-            <p class="staff-profession">Frontend Developer</p>
-          </li>
-          <li class="card-content">
-            <img
-              src="./images/nikolay-tarasov.jpg"
-              alt="nikolay-tarasov"
-              width="270"
-              height="260"
-            />
-            <h3 class="staff-name">Николай Тарасов</h3>
-            <p class="staff-profession">Marketing</p>
-          </li>
-          <li class="card-content">
-            <img src="./images/mihail-ermakov.jpg" alt="mihail-ermakov" width="270" height="260" />
-            <h3 class="staff-name">Михаил Ермаков</h3>
-            <p class="staff-profession">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team-content">
+        <div class="container">
+          <h2 class="section-headline staff-title">Наша команда</h2>
+          <ul class="staff-list list">
+            <li class="card-content">
+              <img
+                src="./images/igor-demyanenko.jpg"
+                alt="igor-demyanenko"
+                class="staff-portrait"
+                width="270"
+              />
+              <h3 class="staff-name">Игорь Демьяненко</h3>
+              <p class="staff-profession">Product Designer</p>
+            </li>
+            <li class="card-content">
+              <img
+                src="./images/olga-repina.jpg"
+                alt="olga-repina"
+                class="staff-portrait"
+                width="270"
+              />
+              <h3 class="staff-name">Ольга Репина</h3>
+              <p class="staff-profession">Frontend Developer</p>
+            </li>
+            <li class="card-content">
+              <img
+                src="./images/nikolay-tarasov.jpg"
+                alt="nikolay-tarasov"
+                class="staff-portrait"
+                width="270"
+              />
+              <h3 class="staff-name">Николай Тарасов</h3>
+              <p class="staff-profession">Marketing</p>
+            </li>
+            <li class="card-content">
+              <img
+                src="./images/mihail-ermakov.jpg"
+                alt="mihail-ermakov"
+                class="staff-portrait"
+                width="270"
+              />
+              <h3 class="staff-name">Михаил Ермаков</h3>
+              <p class="staff-profession">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer section-->
@@ -133,10 +145,12 @@
           <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
           <!-- Contacts information -->
           <ul class="list">
-            <li>
+            <li class="footer-list">
               <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
             </li>
-            <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
+            <li class="footer-list">
+              <a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
