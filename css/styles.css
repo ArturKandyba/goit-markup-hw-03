@@ -33,6 +33,8 @@
   --background-lighten-color: #f5f4fa;
   --element-white-color: #ffffff;
   --header-line-color: #ececec;
+  --card-border-color: #eeeeee;
+  --card-set-gap: 30px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -200,7 +202,7 @@ header .container {
 /* Features section */
 
 .features-section {
-  padding: 94px 0;
+  padding: 94px 0 0;
 }
 .features {
   display: flex;
@@ -227,7 +229,7 @@ header .container {
 /* Capabilities section */
 
 .capabilities {
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .capabilities-list {
   display: flex;
@@ -239,16 +241,13 @@ header .container {
 
 .team-content {
   background-color: var(--background-lighten-color);
+  padding: 94px 0;
 }
-.staff-title {
-  padding-top: 94px;
-}
-.staff-list {
-  padding-bottom: 94px;
 
+.staff-list {
   display: flex;
 }
-.card-content {
+.staff-list > .card-content {
   width: 270px;
 
   color: var(--element-white-color);
@@ -258,14 +257,11 @@ header .container {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.card-content:nth-child(-n + 3) {
+.staff-list > .card-content:nth-child(-n + 3) {
   margin-right: 30px;
 }
-.staff-portrait {
-  padding-bottom: 30px;
-}
 .staff-name {
-  padding-bottom: 10px;
+  padding: 30px 0 10px;
 
   color: var(--main-text-color);
 
@@ -285,11 +281,27 @@ header .container {
 }
 /* Portfolio */
 
+.portfolio {
+  padding: 94px 0;
+}
 .filter-btn-list {
+  margin: 0 auto 50px;
+
+  display: flex;
+  width: 611px;
+}
+.list-btn-item:nth-child(-n + 4) {
+  margin-right: 8px;
 }
 .filter-btn {
+  border-radius: 4px;
+  border: 0;
+
+  padding: 6px 22px;
+
   background-color: var(--background-lighten-color);
   color: var(--main-text-color);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -302,11 +314,30 @@ header .container {
   background-color: var(--accent-color);
   color: var(--element-white-color);
 }
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-set > .card-content {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+
+  margin: 0 30px 30px 0;
+}
 .card-link {
   text-decoration: none;
 }
+.card-description {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
+}
 .card-title {
   color: var(--main-text-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
