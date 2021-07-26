@@ -22,12 +22,14 @@
     <header class="header-section">
       <!-- Navigation -->
       <div class="container">
+        <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
         <nav>
-          <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
-          <ul class="nav-list list">
-            <li><a href="./index.html" class="nav-link">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-            <li><a href="Контакты" class="nav-link">Контакты</a></li>
+          <ul class="link-list list">
+            <li class="link-item"><a href="./index.html" class="nav-link">Студия</a></li>
+            <li class="link-item">
+              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
+            </li>
+            <li class="link-item"><a href="Контакты" class="nav-link">Контакты</a></li>
           </ul>
         </nav>
         <!-- Contacts -->
@@ -35,14 +37,16 @@
           <li>
             <a href="mailto:info@devstudio.com" class="header-contact">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a></li>
+          <li>
+            <a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
     <!-- Main section -->
     <main>
       <section class="portfolio container">
-        <h1 class="hidden-title">Портфолио</h1>
+        <h1 class="visually-hidden">Портфолио</h1>
         <!-- Buttons -->
         <ul class="filter-btn-list list">
           <li><button type="button" class="filter-btn">Все</button></li>
@@ -52,7 +56,7 @@
           <li><button type="button" class="filter-btn">Маркетинг</button></li>
         </ul>
         <!-- Features list -->
-        <ul class="list">
+        <ul class="card-list list">
           <li class="card-content">
             <a href="#" class="card-link">
               <img src="./images/tehnokryak.jpg" alt="tehnokryak" width="370" height="294" />
