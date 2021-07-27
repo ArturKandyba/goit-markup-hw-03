@@ -398,6 +398,3 @@ header > .container {
 .footer-logo:active {
   color: var(--alternate-text-color);
 }
-img {
-  background-color: coral;
-}
