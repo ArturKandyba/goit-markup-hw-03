@@ -216,8 +216,8 @@ header > .container {
 .features {
   display: flex;
 }
-.feature-item:nth-child(-n + 3) {
-  margin-right: 30px;
+.features .feature-item + .feature-item {
+  margin-left: 30px;
 }
 .feature-title {
   margin-bottom: 10px;
@@ -243,8 +243,8 @@ header > .container {
 .capabilities-list {
   display: flex;
 }
-.capability-item:nth-child(-n + 2) {
-  margin-right: 30px;
+.capabilities-list .capability-item + .capability-item {
+  margin-left: 30px;
 }
 /* Team section */
 
@@ -266,8 +266,8 @@ header > .container {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.staff-list > .card-content:nth-child(-n + 3) {
-  margin-right: 30px;
+.staff-list .card-content + .card-content {
+  margin-left: 30px;
 }
 .staff-desc {
   padding: 30px;
