@@ -85,15 +85,20 @@ img {
 }
 /* Header section */
 
-header .container {
+header > .container {
   display: flex;
   align-items: center;
 }
 .header-section {
   border-bottom: 1px solid var(--header-line-color);
 }
-.logo {
+.header-section .logo {
   padding: 24px 0 25px;
+}
+.logo {
+  width: 145px;
+
+  display: block;
 
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -104,6 +109,10 @@ header .container {
 .header-logo {
   color: var(--alternate-text-color);
 }
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
 .nav-link {
   padding: 32px 0;
 
@@ -113,8 +122,8 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link-item:nth-child(2) {
-  margin: 0 50px;
+.link-item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-link:hover,
 :focus {
@@ -136,7 +145,7 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-contact:first-child {
+.contact-item:first-child {
   margin-right: 50px;
 }
 .header-contact:hover,
@@ -260,8 +269,11 @@ header .container {
 .staff-list > .card-content:nth-child(-n + 3) {
   margin-right: 30px;
 }
+.staff-desc {
+  padding: 30px;
+}
 .staff-name {
-  padding: 30px 0 10px;
+  margin-bottom: 10px;
 
   color: var(--main-text-color);
 
@@ -271,8 +283,6 @@ header .container {
   text-align: center;
 }
 .staff-profession {
-  padding-bottom: 30px;
-
   color: var(--communication-text-color);
 
   font-size: 16px;
@@ -285,13 +295,13 @@ header .container {
   padding: 94px 0;
 }
 .filter-btn-list {
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
 
   display: flex;
-  width: 611px;
+  justify-content: center;
 }
-.list-btn-item:nth-child(-n + 4) {
-  margin-right: 8px;
+.filter-btn-list .list-btn-item + .list-btn-item {
+  margin-left: 8px;
 }
 .filter-btn {
   border-radius: 4px;
@@ -336,6 +346,8 @@ header .container {
   border-left: 1px solid var(--card-border-color);
 }
 .card-title {
+  margin-bottom: 4px;
+
   color: var(--main-text-color);
 
   font-weight: 700;
@@ -356,14 +368,18 @@ header .container {
 
   background-color: var(--background-darken-color);
 }
-.location {
+.adds {
   margin-top: 20px;
-
+}
+.location {
   font-style: normal;
   color: var(--element-white-color);
   line-height: 1.71;
 }
 .footer-list {
+  margin-top: 9px;
+}
+.footer-list > li:last-child {
   margin-top: 9px;
 }
 .footer-contact {
@@ -381,4 +397,7 @@ header .container {
 }
 .footer-logo:active {
   color: var(--alternate-text-color);
+}
+img {
+  background-color: coral;
 }
